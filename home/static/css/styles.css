@@ -1,0 +1,195 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Great Vibes', cursive;
+    color: #9932CC;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    background-color: #9932CC;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #7A1FA2;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.about-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-section h2 {
+    color: #9932CC;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.about-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.about-section ul {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style-type: square;
+    padding-left: 20px;
+}
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+.services {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    margin: 2%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body a {
+    margin: 1%;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #9932CC; /* Maintain original background color */
+    color: #fff;
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 2em; /* Adjust the font size if needed */
+}
+
+.contact-content p {
+    margin-top: 1%; margin-right: 6%; margin-bottom: 1%; margin-left: 6%;
+}
+.contact-content {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#contact-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="number"],
+#contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px; /* Increased padding for a more polished look */
+    margin: 10px 0;
+    border: none;
+    border-radius: 27px; /* Keep the rounded corners */
+    box-sizing: border-box;
+    font-size: 1em; /* Ensure readability */
+}
+
+.contact button {
+    width: 100%; /* Make button take full width */
+    padding: 15px;
+    border: none;
+    border-radius: 27px; /* Rounded corners */
+    background-color: #fff;
+    color: #9932CC;
+    font-size: 1.2em; /* Increase font size for better visibility */
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 500px; /* Ensure button matches field width */
+    margin: 10px 0;
+}
+
+.contact button:hover {
+    background-color: #e6e6e6; /* Optional: slight hover effect */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
