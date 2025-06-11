@@ -1,0 +1,20 @@
+databases:
+  - name: vma2-db
+    databaseName: vma2_db
+    user: vma2_user
+
+services:
+  - type: web
+    name: vma2-web
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn vma2.wsgi:application"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: vma2-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4
