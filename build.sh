@@ -4,5 +4,10 @@ set -o errexit
 
 pip install -r requirements.txt
 
-python manage.py collectstatic --no-input
+# Collect static files
+echo "Collecting static files..."
+python manage.py collectstatic --no-input --verbosity=2
+
+# Run migrations
+echo "Running migrations..."
 python manage.py migrate
